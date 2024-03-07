@@ -7,6 +7,7 @@
     <style>
       @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
     </style>
+    <script src="index.js"></script>
 </head>
 <body>
     <div class="widget">
@@ -14,12 +15,21 @@
       <div class="date-pick">
         <p class="input-text">It is a long established fact that a reader will be distracted by the readable content of a page when looking at it's layout.</p>
         <div class="forms">
-          <label for="depart-date"></label>
-          <input type="text" class="block input" id="depart-date" name="date" pattern="\d{2}-\d{2}-\d{4}" title="Введите дату в формате дд-мм-гггг" placeholder="Depart date">
           
-          <label for="return-date"></label>
-          <input type="text" class="block input" id="return-date" name="date" pattern="\d{2}-\d{2}-\d{4}" title="Введите дату в формате дд-мм-гггг" placeholder="Return date">
-          
+          <div class="form-container">
+            <label for="depart-date"></label>
+            <input type="text" class="block input" id="depart-date" name="date" pattern="\d{2}-\d{2}-\d{4}" title="Введите дату в формате дд-мм-гггг" placeholder="Depart date" readonly>
+            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="17">
+              <image href="/Front-end_TP_test/calendar.svg" width="15" height="17"/>
+            </svg>
+          </div>
+          <div class="form-container">
+            <label for="return-date"></label>
+            <input type="text" class="block input" id="return-date" name="date" pattern="\d{2}-\d{2}-\d{4}" title="Введите дату в формате дд-мм-гггг" placeholder="Return date" readonly>
+            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="17">
+              <image href="/Front-end_TP_test/calendar.svg" width="15" height="17"/>
+            </svg>
+          </div>
           <button id="searchButton" class="search-btn input">SEARCH</button>
         </div>
       </div>

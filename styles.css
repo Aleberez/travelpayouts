@@ -10,13 +10,30 @@ body {
   width: 100%; /* Заполнение всей ширины */
   max-width: 1024px; /* Максимальная ширина для десктопной версии */
   margin: 0 auto; /* Центрирование блока */
-  padding: 10px 10px 10px;
+  padding: 10px 10px;
   background-color: #468ee5;
   
 }
 
 .date-pick {
   display: flex;
+}
+
+.forms {
+  display: flex;
+}
+
+.form-container {
+  position: relative;
+  display: inline-block;
+
+}
+
+svg {
+  position: absolute;
+  top: 50%;
+  right: 25px; /* Устанавливает расстояние между правым краем формы и SVG значком */
+  transform: translateY(-50%);
 }
 
 p.input-text {
@@ -29,8 +46,6 @@ p.input-text {
   height: 40px;
   width: 160px;
   margin: 10px;
-  border: 0;
-  border-radius: 2px;
 }
 
 h1 {
@@ -39,8 +54,15 @@ h1 {
 }
 
 .block {
-  padding: 0 10px;
+  padding: 0 15px;
   font-size: 15px;
+  border-radius: 2px;
+  border: none;
+  border-color: white;
+}
+
+.block:focus {
+  outline: 2px solid #F7A700;
 }
 
 .block::placeholder {
@@ -53,6 +75,15 @@ h1 {
   background-color: #F7A700;
   color: white;
   width: 240px;
+  border: none;
+  border-radius: 2px;
+}
+.search-btn:hover {
+  background-color: #e5a51b;
+}
+
+.search-btn:active {
+  background-color: #d19514;
 }
 
 /* Медиа-запрос для мобильных устройств */
