@@ -1,0 +1,80 @@
+
+body {
+  margin: 0;
+  color: white;
+  font-family: "Roboto", sans-serif;
+
+}
+
+.widget {
+  width: 100%; /* Заполнение всей ширины */
+  max-width: 1024px; /* Максимальная ширина для десктопной версии */
+  margin: 0 auto; /* Центрирование блока */
+  padding: 10px 10px 10px;
+  background-color: #468ee5;
+  
+}
+
+.date-pick {
+  display: flex;
+}
+
+p.input-text {
+  font-size: 12px;
+  margin: 10px;
+  width: 300px;
+}
+
+.input {
+  height: 40px;
+  width: 160px;
+  margin: 10px;
+  border: 0;
+  border-radius: 2px;
+}
+
+h1 {
+  padding: 0;
+  margin: 0 10px;
+}
+
+.block {
+  padding: 0 10px;
+  font-size: 15px;
+}
+
+.block::placeholder {
+  color: #b2b2b2;
+}
+
+.search-btn {
+  font-size: 20px;
+  padding: 0;
+  background-color: #F7A700;
+  color: white;
+  width: 240px;
+}
+
+/* Медиа-запрос для мобильных устройств */
+@media (max-width: 1000px) {
+  .widget {
+    max-width: 768px;
+  }
+  .date-pick {
+    flex-direction: column;
+  }
+  .forms {
+    width: 100%;
+  }
+  p.input-text {
+    width: 100%;
+  }
+  .input {
+    width: 180px;
+  }
+  .search-btn {
+    width: 270px;
+    margin-left: 25px;
+  }
+
+}
