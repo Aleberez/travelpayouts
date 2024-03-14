@@ -1,3 +1,3 @@
 # nodejs-package
 
-![alt text](/home/notpokorp/travelpayouts/Front-end_TP_test/maket_preview.png)
+![alt text](https://raw.githubusercontent.com/KosyanMedia/Front-end_TP_test/master/maket_preview.png)
