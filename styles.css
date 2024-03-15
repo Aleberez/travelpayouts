@@ -92,6 +92,10 @@ h1 {
   background-color: #d19514;
 }
 
+p.input-text2 {
+  display: none;
+} 
+
 .pika-single {
   font-family: Arial, sans-serif;
   font-size: 12px;
@@ -185,6 +189,7 @@ h1 {
 @media (max-width: 700px) {
   .forms {
     flex-wrap: wrap;
+    justify-content: space-around;
   }
   .input-text {
     margin-right: 20px;
@@ -201,5 +206,40 @@ h1 {
   }
   .topic {
     font-size: 22px;
+  }
+}
+
+@media (max-width: 300px) {
+  .widget {
+    padding: 5px 10px;
+  }
+  .topic {
+    font-size: 18px;
+  }
+  .input {
+    width: 150px; 
+    margin: 5px 0;
+    font-size: 12px;
+  } 
+  .search-btn { 
+    margin: 5px 0;
+  } 
+  h1.topic { 
+    margin: 0;
+    font-size: 15px; 
+  } 
+  p.input-text {
+    display: none; 
+  }
+  p.input-text2 {
+    display: block;
+    font-size: 10px;
+    margin: 5px 0;
+  } 
+  .search-btn {
+    font-size: 15px;
+  }
+  svg {
+    right: 15px;
   }
 }
